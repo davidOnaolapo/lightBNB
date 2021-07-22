@@ -18,6 +18,7 @@ $(() => {
   window.propertyListings.clearListings = clearListings;
 
   function addProperties(properties, isReservation = false) {
+    console.log(properties);
     clearListings();
     for (const propertyId in properties) {
       const property = properties[propertyId];
